@@ -92,6 +92,7 @@ def get_extensions():
             "-D__CUDA_NO_HALF_OPERATORS__",
             "-D__CUDA_NO_HALF_CONVERSIONS__",
             "-D__CUDA_NO_HALF2_OPERATORS__",
+            "-diag-suppress=177",  # Suppress warning #177-D
         ]
     else:
         print("Compiling without CUDA")
